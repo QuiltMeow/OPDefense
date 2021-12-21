@@ -1,0 +1,23 @@
+name: OPDefense
+main: ew.quilt.OPDefense.Main
+version: 0.02
+author: EW Quilt
+website: http://www.quilt.idv.tw/
+description: 防止 OP 提權插件
+depend: [ProtocolLib]
+commands:
+    qopd:
+        description: Quilt OP Defense 指令集
+permissions:
+    quilt.use.tab:
+        description: 允許使用 Tab 補全功能存取敏感資訊
+        default: op
+    quilt.use.tab.notice:
+        description: 允許收到 Tab 補全功能警告訊息
+        default: op
+    quilt.access.limit.command:
+        description: 允許存取敏感指令
+        default: op
+    quilt.op.command.notice:
+        description: 允許接收 OP 指令使用訊息
+        default: op
